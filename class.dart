@@ -13,10 +13,13 @@ class Point {
     this.x = x;
     this.y = y;
   }
+  //命名建構子
   Point.formJson(Map json) {
     x = json['x'];
     y = json['y'];
   }
+  //重定向建構子=>指向默認建構子
+  Point.formXML(Map xml) : this(xml['x'], xml['y']);
 }
 
 class Point2 {

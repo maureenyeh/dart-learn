@@ -1,7 +1,5 @@
-import 'dart:async';
-
 void main() {
-  //抽象不能new
+  //抽象不能建立實體
   // var aa =new People();
 
   var t = new Teacher();
